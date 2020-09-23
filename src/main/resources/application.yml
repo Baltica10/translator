@@ -1,0 +1,18 @@
+server:
+  port: 8085
+
+spring:
+  main:
+    banner-mode: off
+
+  datasource:
+    initialization-mode: always
+    url: jdbc:postgresql://postgres:5432/neoflex
+    username: neoflex
+    password: neoflex
+
+  jpa:
+    hibernate:
+      ddl-auto: create-drop
+
+    open-in-view: false

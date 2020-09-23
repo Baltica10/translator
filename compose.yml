@@ -1,0 +1,20 @@
+version: '3'
+
+services:
+  translator:
+    build:
+      context: .
+      dockerfile: ./Dockerfile
+    restart: always
+    depends_on:
+      - postgres
+    ports:
+      - "8085:8085"
+
+  postgres:
+    build:
+      context: .
+      dockerfile: ./compose/postgres/Dockerfile
+    restart: always
+    ports:
+      - "5432:5432"
