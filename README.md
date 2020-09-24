@@ -14,7 +14,7 @@ compose/**
 Dockerfile
 compose.yml
 ```
-- go to the directory with files and execute the command:
+- Go to the directory with files and execute the command:
 ```
 export UID && export GID && docker-compose -f compose.yml up -d
 ```
